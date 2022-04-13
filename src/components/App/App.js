@@ -1,6 +1,6 @@
 import React from "react"
 import "./App.css"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Dashboard from "../Dashboard/Dashboard"
 import Preferences from "../Preferences/Preferences"
 
@@ -9,14 +9,14 @@ function App() {
     <div>
       <h1>Application</h1>
       <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route path="/dashboard">
             <Dashboard />
           </Route>
           <Route path="/preferences">
             <Preferences />
           </Route>
-        </Switch>
+        </Routes>
       </BrowserRouter>
     </div>
   )
